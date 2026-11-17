@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nicolás Bernardis · Gestión comercial y ventas técnicas</title>
+<meta name="description" content="Nicolás Bernardis: perfil híbrido técnico y comercial. Coordinador de ventas en Rosario, Santa Fe. Gestión de cuentas, postventa, operaciones y coordinación comercial con ERP y CRM.">
+<meta property="og:title" content="Nicolás Bernardis · Gestión comercial y ventas técnicas">
+<meta property="og:description" content="Del tablero eléctrico al tablero de ventas. Trayectoria, formación y habilidades.">
+<meta property="og:type" content="profile">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#05080F;
+  --surface:rgba(18,28,50,.55);
+  --ink:#E8EEF8;
+  --muted:#8A9AB5;
+  --line:rgba(140,170,225,.15);
+  --accent:#3D7BFF;
+  --accent-ink:#86AAFF;
+  --cool:#22D3EE;
+  --f-display:'Sora','Helvetica Neue',Arial,sans-serif;
+  --f-body:'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --f-mono:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;
+  --p:0;
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;background:radial-gradient(1200px 700px at 85% -10%,rgba(61,123,255,.16),transparent 60%),radial-gradient(900px 600px at -10% 110%,rgba(34,211,238,.08),transparent 60%),var(--bg);background-attachment:fixed;color:var(--ink);font-family:var(--f-body);font-size:1.05rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0;line-height:1.02}
+p{margin:0}
+a{color:var(--accent-ink)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.mono{font-family:var(--f-mono);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase}
+#bar{position:fixed;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent),var(--cool));transform:scaleX(0);transform-origin:0 50%;z-index:60}
+nav.top{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:60px}
+.logo{font-family:var(--f-display);font-weight:600;font-size:1.05rem;color:var(--ink);text-decoration:none;letter-spacing:-.02em}
+.logo span{color:var(--accent)}
+nav.top ul{list-style:none;display:flex;gap:4px;margin:0;padding:0}
+nav.top ul a{display:block;padding:6px 12px;border-radius:999px;color:var(--muted);text-decoration:none;font-size:.92rem;font-weight:500;transition:color .2s,background .2s}
+nav.top ul a:hover{color:var(--ink)}
+nav.top ul a.active{color:var(--ink);background:var(--surface);box-shadow:0 0 0 1px var(--line)}
+nav.top .nav-cta{display:none;padding:8px 16px}
+@media (max-width:760px){nav.top ul{display:none}nav.top .nav-cta{display:inline-flex}}
+.hero{position:relative;overflow:clip;padding:72px 0 64px;border-bottom:1px solid var(--line)}
+.grid-bg{position:absolute;inset:-80px 0 0 0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:44px 44px;opacity:.7;-webkit-mask-image:radial-gradient(ellipse 70% 70% at 75% 30%,#000 10%,transparent 70%);mask-image:radial-gradient(ellipse 70% 70% at 75% 30%,#000 10%,transparent 70%);transform:translateY(calc(var(--p) * 70px));pointer-events:none}
+.hero .wrap{position:relative}
+.glow{position:absolute;border-radius:50%;filter:blur(70px);pointer-events:none}
+.g1{width:560px;height:560px;right:-140px;top:-200px;background:radial-gradient(circle,rgba(61,123,255,.55),transparent 65%);animation:drift 16s ease-in-out infinite alternate}
+.g2{width:380px;height:380px;right:22%;top:46%;background:radial-gradient(circle,rgba(34,211,238,.25),transparent 65%);animation:drift 20s ease-in-out infinite alternate-reverse}
+@keyframes drift{to{transform:translate(-60px,40px) scale(1.08)}}
+.beams{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.beams i{position:absolute;display:block;height:1px;width:200px;left:-220px;background:linear-gradient(90deg,transparent,var(--cool),transparent);opacity:.7;animation:beam 7s linear infinite}
+.beams i:nth-child(1){top:132px;animation-delay:0s}
+.beams i:nth-child(2){top:308px;animation-delay:2.4s;animation-duration:9s}
+.beams i:nth-child(3){top:484px;animation-delay:4.6s}
+.beams b{position:absolute;display:block;width:1px;height:160px;top:-180px;background:linear-gradient(transparent,var(--accent),transparent);opacity:.7;animation:beamv 8s linear infinite}
+.beams b:nth-child(4){left:73%;animation-delay:1.2s}
+.beams b:nth-child(5){left:90%;animation-delay:5s;animation-duration:10s}
+@keyframes beam{to{left:110%}}
+@keyframes beamv{to{top:110%}}
+.eyebrow{color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 18px}
+.eyebrow span::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--accent);margin-right:8px;vertical-align:1px}
+.hero h1{font-size:clamp(2.8rem,8.6vw,6.8rem);font-weight:300;letter-spacing:-.05em;margin:22px 0 26px;line-height:1}
+.hero h1 span{display:block;will-change:transform}
+.hero h1 .l1{transform:translateX(calc(var(--p) * 60px));background:linear-gradient(180deg,#FFFFFF,#A9BAD8);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero h1 .l2{transform:translateX(calc(var(--p) * -60px));font-weight:500;background:linear-gradient(90deg,#4D86FF,#22D3EE);-webkit-background-clip:text;background-clip:text;color:transparent;padding-bottom:.08em}
+.thesis{font-family:var(--f-display);font-weight:400;font-size:clamp(1.25rem,2.4vw,1.7rem);letter-spacing:-.02em;max-width:26ch;line-height:1.3}
+.thesis em{font-style:normal;color:var(--accent-ink)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:40px;align-items:end}
+.summary{color:var(--muted);max-width:60ch;margin-top:18px}
+.now{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px 22px;display:grid;gap:12px}
+.now .mono{color:var(--accent-ink)}
+.now p{font-size:.98rem}
+.now strong{font-weight:600}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;font-weight:600;font-size:.95rem;text-decoration:none;border:1px solid var(--ink);transition:transform .2s,background .2s,color .2s;cursor:pointer;font-family:var(--f-body)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 0 0 1px rgba(255,255,255,.08) inset,0 8px 30px -8px rgba(61,123,255,.8)}
+.btn.ghost{background:rgba(255,255,255,.03);color:var(--ink);border-color:var(--line)}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost:hover{border-color:var(--accent-ink)}
+.btn .arr{transition:transform .2s}
+.btn:hover .arr{transform:translateX(3px)}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin:48px 0 0;border-top:1px solid var(--line)}
+.stats div{padding:18px 18px 0 0}
+.stats div+div{padding-left:18px;border-left:1px solid var(--line)}
+.stats dd{margin:0;font-family:var(--f-display);font-weight:300;font-size:clamp(2rem,4.4vw,3rem);line-height:1;color:var(--accent);font-variant-numeric:tabular-nums;order:-1}
+.stats dt{color:var(--muted);font-size:.9rem;margin-top:6px}
+.stats div{display:flex;flex-direction:column}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr}}
+@media (max-width:480px){.stats div{padding-right:10px}.stats div+div{padding-left:10px}.stats dt{font-size:.8rem}}
+section{padding:96px 0;border-bottom:1px solid var(--line)}
+.sec-head{display:grid;gap:14px;margin-bottom:44px;max-width:62ch}
+.sec-head .mono{color:var(--accent-ink)}
+.sec-head h2{font-size:clamp(1.9rem,4vw,2.9rem);font-weight:400;letter-spacing:-.035em;line-height:1.1}
+.sec-head p{color:var(--muted)}
+.pillars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.pillar{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:26px;display:flex;flex-direction:column;gap:14px;position:relative;overflow:hidden;transition:transform .3s,border-color .3s}
+.pillar::after{content:"";position:absolute;left:0;top:0;height:3px;width:100%;background:var(--k);transform:scaleX(.18);transform-origin:0 50%;transition:transform .5s ease}
+.pillar:hover{transform:translateY(-4px);border-color:var(--k);box-shadow:0 18px 50px -20px var(--k)}
+.pillar:hover::after,.pillar.in::after{transform:scaleX(1)}
+.pillar h3{font-size:1.3rem;font-weight:500;letter-spacing:-.02em}
+.pillar p{color:var(--muted);font-size:.98rem}
+.pillar .mono{color:var(--k)}
+.k-tec{--k:var(--cool)}.k-com{--k:var(--accent)}.k-coo{--k:var(--ink)}
+@media (max-width:860px){.pillars{grid-template-columns:1fr}}
+.tools{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px}
+.tools .sec-head{position:sticky;top:100px;align-self:start;margin-bottom:0}
+.tool-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.tool{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:20px;padding:22px 0;border-bottom:1px solid var(--line);transition:padding .3s}
+.tool:hover{padding-left:10px}
+.tool h3{font-size:1.1rem;font-weight:500;letter-spacing:-.01em}
+.tool h3 small{display:block;font-family:var(--f-mono);font-weight:400;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-top:6px}
+.tool p{color:var(--muted);font-size:.98rem}
+.soft{margin-top:36px}
+.soft h3{font-family:var(--f-mono);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;font-weight:500;color:var(--accent-ink);margin-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;list-style:none;margin:0;padding:0}
+.chips li{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:8px 16px;font-size:.92rem;font-weight:500}
+@media (max-width:860px){.tools{grid-template-columns:1fr;gap:28px}.tools .sec-head{position:static}.tool{grid-template-columns:1fr;gap:6px}}
+.circuit{list-style:none;margin:0;padding:0 0 0 56px;position:relative;display:grid;gap:22px}
+.track,.energy{position:absolute;left:17px;top:0;width:2px;border-radius:2px}
+.track{bottom:0;background:var(--line)}
+.energy{height:0;background:linear-gradient(var(--accent),var(--cool));box-shadow:0 0 10px color-mix(in srgb,var(--accent) 60%,transparent)}
+.energy::after{content:"";position:absolute;bottom:-5px;left:-4px;width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px color-mix(in srgb,var(--accent) 25%,transparent),0 0 18px var(--accent)}
+.step{position:relative;display:grid;grid-template-columns:150px minmax(0,1fr);gap:24px;align-items:start}
+.step::before{content:"";position:absolute;left:-45px;top:24px;width:14px;height:14px;border-radius:50%;background:#05080F;border:2px solid var(--line);transition:background .35s,border-color .35s,box-shadow .35s}
+.step.on::before{background:var(--accent);border-color:var(--accent);box-shadow:0 0 0 6px color-mix(in srgb,var(--accent) 20%,transparent)}
+.when{font-family:var(--f-mono);font-size:.85rem;color:var(--muted);padding-top:20px;font-variant-numeric:tabular-nums;transition:color .35s}
+.step.on .when{color:var(--ink)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px 24px;display:grid;gap:8px;transition:border-color .35s,transform .35s}
+.step.on .card{border-color:color-mix(in srgb,var(--accent) 40%,var(--line))}
+.card-top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px}
+.card h3{font-size:1.25rem;font-weight:500;letter-spacing:-.02em}
+.role{font-weight:500}
+.desc{color:var(--muted);font-size:.98rem}
+.loc{font-family:var(--f-mono);font-size:.75rem;color:var(--muted);letter-spacing:.04em}
+.chip{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:999px;border:1px solid currentColor;white-space:nowrap}
+.chip.t{color:var(--cool)}
+.chip.c{color:var(--accent)}
+.chip.now{color:#fff;background:var(--accent);border-color:var(--accent);box-shadow:0 0 16px rgba(61,123,255,.6)}
+@media (max-width:700px){.step{grid-template-columns:1fr;gap:4px}.when{padding-top:18px}.circuit{padding-left:44px}.step::before{left:-33px}}
+.edu{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.edu article{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:10px;transition:transform .3s,border-color .3s}
+.edu article:hover{transform:translateY(-4px);border-color:var(--cool);box-shadow:0 18px 50px -24px var(--cool)}
+.edu .mono{color:var(--muted);font-variant-numeric:tabular-nums}
+.edu h3{font-size:1.05rem;font-weight:500;letter-spacing:-.01em;line-height:1.3}
+.edu p{color:var(--muted);font-size:.94rem;margin-top:auto}
+.edu .feature{border-color:var(--accent-ink)}
+.edu .feature .mono{color:var(--accent-ink)}
+#contacto{border-bottom:0;padding-bottom:72px}
+.contact{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:40px;align-items:end}
+.contact h2{font-size:clamp(2.4rem,6vw,4.4rem);font-weight:300;letter-spacing:-.05em;line-height:1}
+.contact h2 span{color:var(--cool)}
+.contact .lead{color:var(--muted);margin-top:20px;max-width:46ch}
+.links{display:grid;gap:12px}
+.link-row{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.link-row .mono{color:var(--muted);display:block;margin-bottom:2px}
+.link-row a{color:var(--ink);font-weight:600;text-decoration:none;word-break:break-all}
+.link-row a:hover{color:var(--accent-ink)}
+.copy{background:transparent;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:7px 14px;font:500 .85rem var(--f-body);cursor:pointer}
+.copy:hover{border-color:var(--ink)}
+#copy-status{font-size:.85rem;color:var(--muted);min-height:1.3em}
+@media (max-width:860px){.contact{grid-template-columns:1fr}}
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:.88rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.now,.pillar,.card,.edu article,.link-row,.chips li{backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:inset 0 1px 0 rgba(255,255,255,.05)}
+.sec-head h2{background:linear-gradient(180deg,#FFFFFF,#B3C3DE);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stats dd{text-shadow:0 0 24px rgba(61,123,255,.55)}
+::selection{background:rgba(61,123,255,.45);color:#fff}
+.hl{border:1px solid transparent !important;background:linear-gradient(rgba(12,20,38,.88),rgba(12,20,38,.88)) padding-box,linear-gradient(135deg,rgba(77,134,255,.85),rgba(34,211,238,.45) 45%,rgba(140,170,225,.12)) border-box !important;box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 24px 60px -32px rgba(61,123,255,.75)}
+.sec-head .mono{display:inline-flex;align-items:center;gap:10px}
+.sec-head .mono::before{content:"";width:22px;height:1px;background:linear-gradient(90deg,var(--accent),var(--cool));box-shadow:0 0 8px var(--accent)}
+.sec-head h2 em,.thesis em{font-style:normal;background:linear-gradient(90deg,#5B92FF,#3FD6EF);-webkit-background-clip:text;background-clip:text;color:transparent}
+.tool.key h3{color:#fff}
+.tool.key h3::after{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--cool);box-shadow:0 0 8px var(--cool);margin-left:10px;vertical-align:3px}
+.step.cur .card h3{color:#fff}
+.edu .feature h3,.now strong{color:#fff}
+.rv{opacity:.45;transform:translateY(26px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0ms)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none !important;animation:none !important}
+  .hero h1 span,.grid-bg{transform:none !important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div id="bar" aria-hidden="true"></div>
+
+<nav class="top" aria-label="Secciones">
+  <div class="wrap">
+    <a class="logo" href="#top">NB<span>.</span></a>
+    <ul>
+      <li><a href="#perfil">Perfil</a></li>
+      <li><a href="#herramientas">Herramientas</a></li>
+      <li><a href="#trayectoria">Trayectoria</a></li>
+      <li><a href="#formacion">Formación</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a class="btn ghost nav-cta" href="#contacto">Contacto</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="glow g1" aria-hidden="true"></div><div class="glow g2" aria-hidden="true"></div>
+  <div class="beams" aria-hidden="true"><i></i><i></i><i></i><b></b><b></b></div>
+  <div class="wrap">
+    <p class="eyebrow mono"><span>Técnico electromecánico</span><span>Gestión comercial</span><span>Ventas técnicas</span></p>
+    <h1><span class="l1">Nicolás</span><span class="l2">Bernardis</span></h1>
+    <div class="hero-grid">
+      <div>
+        <p class="thesis">Del tablero eléctrico al <em>tablero de ventas</em>.</p>
+        <p class="summary">Combino formación técnica electromecánica con experiencia en gestión de cuentas, postventa, operaciones y coordinación comercial. Me enfoco en la relación a largo plazo con el cliente, en resolver fricciones operativas y en ordenar procesos con ERP y CRM, para que las soluciones se adopten y los clientes se queden.</p>
+        <div class="actions">
+          <a class="btn primary" href="#trayectoria">Ver trayectoria <span class="arr" aria-hidden="true">→</span></a>
+          <a class="btn ghost" href="#contacto">Contactar</a>
+        </div>
+      </div>
+      <aside class="now hl" aria-label="Actualidad">
+        <span class="mono">Hoy</span>
+        <p><strong>Coordinador de ventas</strong> en Electro Uno, desde junio de 2026.</p>
+        <p><strong>Diplomatura en Administración de Empresas</strong> en UTN-FRRQ, en curso.</p>
+        <p class="loc">Rosario, Santa Fe, Argentina</p>
+      </aside>
+    </div>
+    <dl class="stats">
+      <div><dt>años de trayectoria laboral, desde 2017</dt><dd><span class="count" data-to="9">9</span></dd></div>
+      <div><dt>puestos y emprendimientos</dt><dd><span class="count" data-to="7">7</span></dd></div>
+      <div><dt>capacitaciones complementarias</dt><dd><span class="count" data-to="5">5</span></dd></div>
+    </dl>
+  </div>
+</header>
+
+<main>
+<section id="perfil">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <span class="mono">Perfil</span>
+      <h2>Un perfil <em>híbrido</em>, técnico y comercial</h2>
+      <p>Entiendo cómo funciona lo que se vende, y eso cambia la conversación con el cliente B2B.</p>
+    </div>
+    <div class="pillars">
+      <article class="pillar k-tec" data-rv style="--d:0ms">
+        <span class="mono">Base técnica</span>
+        <h3>Sé cómo está hecho</h3>
+        <p>Técnico en Equipos e Instalaciones Electromecánicas. Monté y cableé tableros eléctricos para industrias, diagnostiqué y reparé vehículos y fabriqué mis propios artefactos de iluminación LED.</p>
+      </article>
+      <article class="pillar k-com" data-rv style="--d:120ms">
+        <span class="mono">Comercial y postventa</span>
+        <h3>Cuido la relación</h3>
+        <p>Atención a clientes presencial y online, postventa, logística, facturación y administración de ventas. Busco resolver las fricciones operativas para asegurar la retención y la satisfacción del cliente.</p>
+      </article>
+      <article class="pillar k-coo" data-rv style="--d:240ms">
+        <span class="mono">Coordinación</span>
+        <h3>Ordeno al equipo</h3>
+        <p>Dirijo un equipo comercial, analizo resultados y hago el seguimiento de los objetivos de ventas, con un enfoque analítico.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="herramientas">
+  <div class="wrap tools">
+    <div class="sec-head">
+      <span class="mono">Herramientas y alcance</span>
+      <h2>Qué uso y <em>para qué</em> lo uso</h2>
+      <p>Las herramientas valen por lo que resuelven. Este es el alcance con el que trabajo cada una.</p>
+    </div>
+    <div>
+      <ul class="tool-list">
+        <li class="tool key" data-rv><h3>ERP<small>Gestión</small></h3><p>Registro de ventas, facturación y logística. Uso el sistema para ordenar y optimizar los procesos de la operación diaria.</p></li>
+        <li class="tool key" data-rv><h3>CRM<small>Clientes</small></h3><p>Seguimiento de cuentas y postventa, con foco en la relación a largo plazo y en la retención del cliente.</p></li>
+        <li class="tool" data-rv><h3>Office y Google<small>Productividad</small></h3><p>Planillas, informes y documentos para el análisis de resultados y el seguimiento de objetivos.</p></li>
+        <li class="tool" data-rv><h3>Canva<small>Diseño</small></h3><p>Material visual y presentaciones comerciales.</p></li>
+        <li class="tool" data-rv><h3>Gemini y Claude<small>Asistentes de IA</small></h3><p>Apoyo para redactar, analizar información y preparar trabajo con más velocidad.</p></li>
+        <li class="tool" data-rv><h3>Oficio técnico<small>Electromecánica</small></h3><p>Montaje y cableado de tableros eléctricos, diagnóstico y reparación de vehículos, fabricación de iluminación LED y fusionado de fibra óptica.</p></li>
+      </ul>
+      <div class="soft" data-rv>
+        <h3>Habilidades interpersonales</h3>
+        <ul class="chips">
+          <li>Comunicación verbal profesional y fluida</li>
+          <li>Adaptabilidad ágil a entornos nuevos</li>
+          <li>Gestión eficiente del tiempo</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="trayectoria">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <span class="mono">Trayectoria · 2017 a hoy</span>
+      <h2>Experiencia <em>en evolución</em></h2>
+      <p>Nueve años que empezaron en la producción y el oficio técnico, siguieron en la atención al cliente y la postventa, y hoy se enfocan en coordinar un equipo comercial.</p>
+    </div>
+    <ol class="circuit" id="circuit">
+      <li class="track" aria-hidden="true"></li>
+      <li class="energy" id="energy" aria-hidden="true"></li>
+      <li class="step" data-rv>
+        <div class="when">2017 – 2018</div>
+        <div class="card">
+          <div class="card-top"><h3>Colven</h3><span class="chip t">Base técnica</span></div>
+          <p class="role">Operario de producción</p>
+          <p class="loc">Guadalupe Norte, Santa Fe</p>
+        </div>
+      </li>
+      <li class="step" data-rv>
+        <div class="when">2018 – 2020</div>
+        <div class="card">
+          <div class="card-top"><h3>Proyección Electroluz</h3><span class="chip t">Base técnica</span></div>
+          <p class="role">Electricista</p>
+          <p class="desc">Montaje y cableado de tableros eléctricos para industrias.</p>
+          <p class="loc">Reconquista, Santa Fe</p>
+        </div>
+      </li>
+      <li class="step" data-rv>
+        <div class="when">2018 – 2020</div>
+        <div class="card">
+          <div class="card-top"><h3>Solux</h3><span class="chip c">Emprendimiento</span></div>
+          <p class="role">Fundador</p>
+          <p class="desc">Fabricación y venta de artefactos de iluminación LED high power de manufactura propia.</p>
+        </div>
+      </li>
+      <li class="step" data-rv>
+        <div class="when">2021 – 2022</div>
+        <div class="card">
+          <div class="card-top"><h3>Reutemann Automotores</h3><span class="chip t">Base técnica</span></div>
+          <p class="role">Mecánico</p>
+          <p class="desc">Diagnóstico y reparación de vehículos. Preparación y entrega de vehículos 0 km.</p>
+          <p class="loc">Rosario, Santa Fe</p>
+        </div>
+      </li>
+      <li class="step" data-rv>
+        <div class="when">2022 – 2025</div>
+        <div class="card">
+          <div class="card-top"><h3>Menini SA (Indupan)</h3><span class="chip c">Comercial</span></div>
+          <p class="role">Asesor comercial</p>
+          <p class="desc">Atención a clientes presencial y online. Postventa y logística.</p>
+          <p class="loc">Rosario, Santa Fe</p>
+        </div>
+      </li>
+      <li class="step" data-rv>
+        <div class="when">Feb – Abr 2026</div>
+        <div class="card">
+          <div class="card-top"><h3>Enertik</h3><span class="chip c">Comercial</span></div>
+          <p class="role">Asesor comercial</p>
+          <p class="desc">Administración, ventas, facturación y logística.</p>
+          <p class="loc">Rosario, Santa Fe</p>
+        </div>
+      </li>
+      <li class="step cur" data-rv>
+        <div class="when">Jun 2026 – hoy</div>
+        <div class="card hl">
+          <div class="card-top"><h3>Electro Uno</h3><span class="chip now">Actualidad</span></div>
+          <p class="role">Coordinador de ventas</p>
+          <p class="desc">Dirección del equipo comercial. Análisis de resultados y seguimiento de objetivos de ventas.</p>
+          <p class="loc">Rosario, Santa Fe</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="formacion">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <span class="mono">Formación</span>
+      <h2>Aprendizaje <em>continuo</em></h2>
+      <p>Una base técnica de escuela industrial y formación en gestión, marketing y tecnología.</p>
+    </div>
+    <div class="edu">
+      <article class="feature hl" data-rv style="--d:0ms"><span class="mono">2026 · En curso</span><h3>Diplomatura en Administración de Empresas</h3><p>UTN-FRRQ</p></article>
+      <article data-rv style="--d:80ms"><span class="mono">2026</span><h3>Capacitaciones continuas en tecnología y gestión</h3><p>LinkedIn Learning</p></article>
+      <article data-rv style="--d:160ms"><span class="mono">2022</span><h3>Neuromarketing</h3><p>Capacitarte</p></article>
+      <article data-rv style="--d:0ms"><span class="mono">2022</span><h3>Marketing y comercio internacional</h3><p>Capacitarte</p></article>
+      <article data-rv style="--d:80ms"><span class="mono">2021</span><h3>Economía y planeación fiscal</h3><p>ICB</p></article>
+      <article data-rv style="--d:160ms"><span class="mono">2019</span><h3>Fusionado de fibra óptica</h3><p>Capacitación de empresa</p></article>
+      <article data-rv style="--d:0ms"><span class="mono">2011 – 2016</span><h3>Técnico en Equipos e Instalaciones Electromecánicas</h3><p>E.E.T. N.º 619</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="wrap contact">
+    <div data-rv>
+      <h2>Hablemos<span>.</span></h2>
+      <p class="lead">Si buscas a alguien que entienda el producto, al cliente y al equipo comercial, escríbeme.</p>
+    </div>
+    <div class="links" data-rv style="--d:120ms">
+      <div class="link-row hl">
+        <div><span class="mono">Correo</span><a href="mailto:nicolasbernardis@outlook.com">nicolasbernardis@outlook.com</a></div>
+        <button class="copy" id="copy" type="button">Copiar</button>
+      </div>
+      <div class="link-row">
+        <div><span class="mono">LinkedIn</span><a href="https://www.linkedin.com/in/nicol%C3%A1s-bernardis-105b17205" target="_blank" rel="noopener">linkedin.com/in/nicolás-bernardis</a></div>
+        <span aria-hidden="true">↗</span>
+      </div>
+      <p id="copy-status" aria-live="polite"></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap"><span>Nicolás M. Bernardis</span><span>Rosario, Santa Fe, Argentina</span></div>
+</footer>
+
+<script>
+(function(){
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var root = document.documentElement;
+  var bar = document.getElementById('bar');
+  var hero = document.getElementById('top');
+  var circuit = document.getElementById('circuit');
+  var energy = document.getElementById('energy');
+  var steps = [].slice.call(circuit.querySelectorAll('.step'));
+  var navLinks = [].slice.call(document.querySelectorAll('nav.top ul a'));
+  var sections = navLinks.map(function(a){ return document.querySelector(a.getAttribute('href')); });
+  var ticking = false;
+
+  function update(){
+    var y = window.scrollY || window.pageYOffset || 0;
+    var vh = window.innerHeight;
+    var max = document.documentElement.scrollHeight - vh;
+    bar.style.transform = 'scaleX(' + (max > 0 ? Math.min(1, y / max) : 0) + ')';
+    if (!reduce) root.style.setProperty('--p', Math.min(1, y / (hero.offsetHeight || 1)).toFixed(3));
+
+    var r = circuit.getBoundingClientRect();
+    var prog = Math.max(0, Math.min(r.height, vh * 0.62 - r.top));
+    energy.style.height = prog + 'px';
+    steps.forEach(function(s){ s.classList.toggle('on', s.offsetTop + 24 <= prog); });
+
+    var active = -1;
+    sections.forEach(function(sec, i){ if (sec && sec.getBoundingClientRect().top <= vh * 0.4) active = i; });
+    if (max - y < 4) active = sections.length - 1;
+    navLinks.forEach(function(a, i){ a.classList.toggle('active', i === active); });
+    ticking = false;
+  }
+  function onScroll(){ if (!ticking){ ticking = true; requestAnimationFrame(update); } }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  update();
+
+  var items = [].slice.call(document.querySelectorAll('[data-rv]'));
+  if (!reduce && 'IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+    items.forEach(function(el){
+      if (el.getBoundingClientRect().top > window.innerHeight){ el.classList.add('rv'); io.observe(el); }
+      else el.classList.add('in');
+    });
+  } else {
+    items.forEach(function(el){ el.classList.add('in'); });
+  }
+
+  if (!reduce){
+    [].slice.call(document.querySelectorAll('.count')).forEach(function(el){
+      var to = parseInt(el.getAttribute('data-to'), 10), t0 = null, dur = 1300;
+      function step(ts){
+        if (!t0) t0 = ts;
+        var k = Math.min(1, (ts - t0) / dur);
+        el.textContent = Math.round(to * (1 - Math.pow(1 - k, 3)));
+        if (k < 1) requestAnimationFrame(step);
+      }
+      el.textContent = '0';
+      requestAnimationFrame(step);
+    });
+  }
+
+  var btn = document.getElementById('copy'), status = document.getElementById('copy-status');
+  btn.addEventListener('click', function(){
+    var mail = 'nicolasbernardis@outlook.com';
+    function fail(){ status.textContent = 'No se pudo copiar. Selecciona el correo y cópialo a mano.'; }
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(mail).then(function(){ status.textContent = 'Correo copiado.'; btn.textContent = 'Copiado'; setTimeout(function(){ btn.textContent = 'Copiar'; }, 2000); }, fail);
+      } else fail();
+    } catch (e) { fail(); }
+  });
+})();
+</script>
+</body>
+</html>
